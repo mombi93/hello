@@ -8,10 +8,10 @@ router.get('/', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/:name', function(req, res, next) {
-  res.send('hello ' + req.params.name);
+  res.send('howdy ' + req.params.name);
 });
 
 router.get('/:name/:quote', function(req, res, next) {
-  res.send(req.params.name + ' said ' + req.params.quote);
+  res.send(req.params.name + ' yelled ' + req.params.quote);
 });
 module.exports = router;
